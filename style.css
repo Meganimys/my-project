@@ -1,0 +1,87 @@
+/* Reset стилів */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Базові стилі */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin-right: 20px;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main-info__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feedback-form__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.contact-info__title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.feedback-form__form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}

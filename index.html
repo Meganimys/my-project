@@ -1,19 +1,53 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Автомайстерня</title>
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ab asperiores nostrum dignissimos quae nesciunt, sunt maiores recusandae perspiciatis harum fugiat rem, ea maxime fuga accusantium obcaecati, numquam voluptates exercitationem?
-    </p>
-    <p>
-        <ul>
-            <li>Lorem, ipsum.</li>
-            <li>Commodi, enim!</li>
-            <li>Numquam, deleniti?</li>
-            <li>Harum, modi.</li>
-            <li>Dolore, accusamus?</li>
-        </ul>
-    </p>
+
+    <header class="header">
+        <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a href="#" class="menu__link">Головна</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Послуги</a></li>
+                <li class="menu__item"><a href="#" class="menu__link">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="main-info">
+            <h1 class="main-info__title">Ласкаво просимо в нашу автомайстерню</h1>
+            <p class="main-info__description">Ми пропонуємо високоякісні послуги з ремонту автомобілів.</p>
+        </section>
+
+        <section class="feedback-form">
+            <h2 class="feedback-form__title">Зв'яжіться з нами</h2>
+            <form action="process-form.php" method="post" class="feedback-form__form">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Емейл:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="contact-info">
+            <h3 class="contact-info__title">Контакти</h3>
+            <!-- Контактна інформація тут -->
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
